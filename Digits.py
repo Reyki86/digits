@@ -68,7 +68,7 @@ PX=[]
 
 with torch.no_grad():
     for i in range(10):
-        img = cv2.imread("./n"+str(i)+".jpg", cv2.IMREAD_GRAYSCALE)
+        img = cv2.imread("./numbers/n"+str(i)+".jpg", cv2.IMREAD_GRAYSCALE)
         pltimg=np.array(img)
         imgplot = plt.imshow(pltimg)
         img = cv2.resize(img, (50, 50))
